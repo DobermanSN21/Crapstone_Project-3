@@ -1,0 +1,172 @@
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+/* Dalam file CSS Anda */
+
+.custom-bg {
+  background-image: url("./Images/Beige\ Brown\ Minimal\ Organic\ Creative\ Project\ Presentation.jpg");
+  background-size: cover; /* Atur ukuran latar belakang */
+  background-position: center; /* Atur posisi latar belakang */
+}
+
+/* Grid system */
+:root {
+  --prefix: bd-;
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeholderShimmer-rtl {
+  0% {
+    background-position: 468px 0;
+  }
+  100% {
+    background-position: -468px 0;
+  }
+}
+
+[data-bs-ride="carousel"] {
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next.carousel-item-start,
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev.carousel-item-start,
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-start {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-start {
+  transition: opacity 0.6s ease;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-next,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .carousel-fade .carousel-item {
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .active.carousel-item-next,
+  .carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* styles.css */
+
+.container {
+  padding: 1rem;
+}
+
+.featurette {
+  display: flex;
+  align-items: center;
+}
+
+.featurette .col-md-7 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.featurette h2,
+.featurette p {
+  text-align: left;
+}
+
+/* styles.css */
+
+.container {
+  padding: 1rem;
+}
+
+.pb-2.border-bottom.fw-bold.text-center.custom-font {
+  font-family: "Maison Neue Extended", sans-serif;
+  /* Anda perlu memiliki font "Maison Neue Extended" dan menggantinya dengan alamat font yang benar di sini */
+  font-size: 48px; /* Ukuran font 48px */
+}
+
+.pb-2.border-bottom.fw-bold.text-center {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* Anda bisa menambahkan gaya lain yang dibutuhkan di sini */
+}
